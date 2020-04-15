@@ -1,0 +1,13 @@
+##以下是对服务器的设置
+server:
+  servlet:
+    context-path: /boot
+
+
+#my:
+#  name: 阿三
+spring:
+  profiles:
+    active: dev
+
+
