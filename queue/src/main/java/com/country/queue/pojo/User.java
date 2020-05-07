@@ -1,5 +1,6 @@
 package com.country.queue.pojo;
 
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
@@ -7,15 +8,14 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource(value= "classpath:sysconfig.properties",encoding = "utf-8")
 @ConfigurationProperties(prefix = "my")
+@Data
 public class User {
+
+    private int id;
 
     private String name;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    private String userName;
 
-    public String getName() {
-        return name;
-    }
+    private String passWord;
 }

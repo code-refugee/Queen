@@ -73,6 +73,11 @@ Springboot会默认提供白标错误页，不过比较丑，我们可以自定�
 创建一个错误页，并把它命名为 error.xxx 即可。其中，xxx后缀与你的视图解析器有关，如果你使用的是jsp视图
 则命名为 error.jsp 如果是thymeleaf，则命名为 error.html即可<br>
 
+##测试<br>
+参考 QueueApplicationTests 类<br>
+
+##部署SpringBoot应用服务<br>
+
 
 ##拓展<br>
 修改application.yml无需重启工程，支持热部署<br>
